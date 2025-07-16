@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+<title>buscador de productos</title>
+  <link rel="stylesheet" type="text/css" href="estilos1.css">
+</head>
+<body>
+
+     <header>
+
+      <div class="logo">
+      <img src="quetzal.png" alt="Logo">
+      <div class="title">Sabores de mi <br>tierra</div>
+    </div>
+    <nav>
+      <ul>
+          <li><a href="index.html#">inicio</a></li>
+        <li><a class="active" href="index1.html#">Menú</a></li>
+        <li><a href="index2.html#">Acerca de</a></li>
+        <li><a href="index3.html#">Redes Sociales</a></li>
+        <li><a href="index4.html">Servicios</a ></li>
+      </ul>
+    </nav>
+ 
+      
+    </div>
+     </header>
+        <div class="search-container">
+         <input type="text" id="searchInput" placeholder="Buscar menú...">
+         <button onclick="filterProducto()">buscar</button>
+</div>
+<main class="container">
+       <ul id="product-list">
+        <li data-category="desayunos" onclick="toggleZoom(this)">
+          <h3>chuchitos</h3>
+          <p>elaborados de maíz natual,salsa criolla, pollo o cerdo, envueltos en una tusa de maíz, cocido con leña , son una delicia guatemalteca       </p>
+          <div class="b2">
+          <img src="https://recetas.guategt.com/wp-content/uploads/2015/03/Receta-de-chuchitos.jpg" width="350" height="150">
+        </li>
+       </div>
+<li data-category="desayunos" onclick="toggleZoom(this)">
+          <h3>Desayuno tradicional</h3>
+          <p>¡es delicioso! Este popular desayuno incluye plátanos, huevos y otros platillos sustanciosos que sin duda te darán la energía necesaria para afrontar el día.</p>
+          <div class="b2">
+          <img src="https://www.haceloconhuevos.com/wp-content/uploads/2022/05/Desayuno-Ti%CC%81pico-Chapi%CC%81n.jpg" width="350" height="150">
+        </li>
+              </div>
+<li data-category="desayunos" onclick="toggleZoom(this)">
+          <h3>Panqueques</h3>
+          <p>Los panqueques son una preparación dulce o salada elaborada a base de una mezcla líquida de harina, huevos, leche y mantequilla, cocinada en una sartén o plancha. </p>
+          <div class="b2">
+          <img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/87bb52f6-15d5-4cd9-9253-04f01555491f/Derivates/d666b5c2-ba8c-4201-afc6-11f2f6990f23.jpg" width="350" height="150">
+        </li>
+              </div>
+              <li data-category="desayunos" onclick="toggleZoom(this)">
+          <h3>Pache</h3>
+          <p>Su preparación incluye una masa suave de papa cocida y machacada, mezclada con especias y recado (salsa) a base de tomate, chile y achiote. </p>
+          <div class="b2">
+          <img src="https://aprende.guatemala.com/wp-content/uploads/2016/11/Paches.png" width="350" height="150">
+        </li>
+              </div>
+</div>
+              <li data-category="desayunos" onclick="toggleZoom(this)">
+          <h3>Mosh</h3>
+          <p>es un platillo tradicional típico del desayuno en Guatemala. Consiste en una especie de atol espeso preparado a base de avena cocida en leche (a veces con agua), al que se le puede agregar azúcar, canela, vainilla o incluso un toque de sal, dependiendo del gusto.</p>
+          <div class="b2">
+          <img src="https://i.ytimg.com/vi/2LNW9lvZ3QI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB0XxMar_BczL-92M3MLxBeQ54fLQ" width="350" height="150">
+        </li>
+        </div>
+              <li data-category="desayunos" onclick="toggleZoom(this)">
+          <h3>Tostada a la francesa</h3>
+          <p>La tostada a la francesa se prepara remojando rebanadas de pan (generalmente del día anterior) en una mezcla de huevo batido con leche, a veces con azúcar, vainilla y canela. Luego, las rebanadas se fríen en un sartén con mantequilla hasta que estén doradas por ambos lados.</p>
+          <div class="b2">
+          <img src="https://www.thefoodieskitchen.com/wp-content/uploads/2010/07/4807208400_dfb715d535-1.jpg" width="350" height="150">
+        </li>
+              </div>
+              </div>
+              <li data-category="desayunos" onclick="toggleZoom(this)">
+          <h3>Sandwich</h3>
+          <p>Pan: Puede ser blanco, integral, de molde, baguette, pan pita, entre otros.
+
+Relleno: Generalmente incluye alguna fuente de proteína como jamón, queso, pollo, atún, huevo o carne, acompañada de vegetales (lechuga, tomate, cebolla, pepino) y aderezos como mayonesa, mostaza o mantequilla.</p>
+          <div class="b2">
+          <img src="https://lahora.gt/wp-content/uploads/sites/5/2023/11/Sandwich.jpg" width="350" height="150">
+        </li>
+              </div>
+              </div>
+              <li data-category="desayunos" onclick="toggleZoom(this)">
+          <h3>Mole</h3>
+          <p>El mole se elabora con una mezcla de chiles secos, especias, semillas (como ajonjolí), frutos secos, tomate, ajo, cebolla y, en algunas versiones, chocolate. Todos estos ingredientes se tuestan, muelen y cocinan lentamente hasta formar una salsa rica, oscura y de sabor profundo.</p>
+          <div class="b2">
+          <img src="https://i.ytimg.com/vi/3ECxjfSKCHw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDcakSV4ErB9e8EFon3nsxEW0q6Og" width="350" height="150">
+        </li>
+              </div>
+               </div>
+              <li data-category="desayunos" onclick="toggleZoom(this)">
+          <h3>Tason de frutas</h3>
+          <p>Un tazón de frutas es una mezcla fresca y nutritiva de diferentes frutas cortadas en trozos, como papaya, sandía, banano, piña y fresas. Se suele servir acompañado con yogurt natural, granola casera, semillas de chía y un toque opcional de miel para endulzar. Es una opción saludable.
+
+</p>
+          <div class="b2">
+          <img src="https://zurichgt.com/wp-content/uploads/2025/02/small_Diseno_sin_titulo_98_31814857ce.png" width="350" height="150">
+        </li>
+              </div>
+        
+
+       </ul>
+      <script src="funcion5.js"></script>
+
+
+
+       </ul>
+      <script src="funcion1.js"></script> 
+      <script>
+    function toggleZoom(element) {
+      element.classList.toggle('zoomed');
+    }
+  </script>
+</body>
+</html>

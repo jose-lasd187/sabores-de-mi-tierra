@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores de mi tierra</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="quetzal.png" alt="Logo Sabores de mi tierra">
+            <h1>Sabores de mi <br> tierra</h1>
+        </div>
+     <nav>
+      <ul>
+          <li><a href="index.html#">inicio</a></li>
+       <li><a href="index1.html#">Menu</a></li>
+        <li><a class="active" href="index2.html#">Acerca de</a></li>
+        <li><a href="index3.html">Redes Sociales</a></li>
+        <li><a href="index4.html">Servicios</a></li>
+      </ul>
+    </nav>
+        
+    </header>
+
+   
+   <div class="info-container">
+  <div class="info-box " onclick="toggleZoom(this)">
+    <h2>Misión</h2>
+    <p>
+      Nuestra misión es ofrecer una experiencia culinaria única que combine sabores auténticos,
+      ingredientes frescos y un servicio cálido y personalizado...
+    </p>
+  </div>
+
+  <div class="info-box" onclick="toggleZoom(this)">
+    <h2>Visión</h2>
+    <p>
+      Ser reconocidos como un referente de calidad y sabor en la gastronomía local, destacando por
+      nuestro compromiso con la excelencia culinaria...
+    </p>
+  </div>
+
+  <div class="info-box" onclick="toggleZoom(this)">
+    <h2>Valores</h2>
+    <p>
+      Calidad, servicio al cliente y pasión. Nos comprometemos a ofrecer alimentos frescos, atención
+      amable y cocina hecha con amor...
+    </p>
+  </div>
+</div>
+<script>
+  function toggleZoom(element) {
+    element.classList.toggle('zoomed');
+  }
+</script>
+</body>
+</html>

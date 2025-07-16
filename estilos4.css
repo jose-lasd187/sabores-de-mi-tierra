@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #18e00d;
+background: linear-gradient(90deg, rgba(24, 224, 13, 1) 1%, rgba(13, 189, 139, 1) 26%, rgba(0, 212, 255, 1) 50%, rgba(13, 189, 139, 1) 72%, rgba(13, 255, 0, 1) 100%, rgba(255, 0, 0, 1) 100%);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav li strong {
+  color: black;
+  font-size: 20px;
+}
+
+main {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.servicios {
+  display: flex;
+  gap: 20px;
+}
+nav a.active {
+  color: black;
+}
+
+
+.card {
+   color: black;
+  border-radius: 20px;
+  padding: 25px;
+  width: 250px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /*crea una sombra suave y difuminada alrededor de un elemento*/
+  text-align: center;
+  animation: fadeInUp 3s forwards;
+   border-bottom: 4px solid black; /* orilla solo abajo */
+}
+
+.card a{
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.card img {
+  width: 100px;
+  height: auto;
+}
+@keyframes fadeInUp { 
+  from {
+    transform: translateY(90px);
+    opacity: 0;  
+  }
+  
